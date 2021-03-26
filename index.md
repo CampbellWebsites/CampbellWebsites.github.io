@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body {
+	background-color: #cfcfcf;
+    color: black
+	}
+h2 {
+	border: 5px solid black;
+	width: 375px;
+	padding: 10px;
+	font-family: 'Lucida Handwriting', cursive;
+	overflow: auto;
+	background-color: transparent;
+	box-shadow: 10px 10px 5px grey;
+	}
+.description {
+    color: #666558;
+	width: 100%;
+    margin: 10px;
+	}
+a:link {
+ 	background-color: LightGrey;
+	width: 100px;
+	color: black;
+    margin: 10px;
+	}
+a:visited {
+ 	background-color: Gainsboro;
+	width: 100px;
+	color: black;
+    margin: 10px;
+	}
+a:hover {
+ 	background-color: White;
+	width: 100px;
+	color: black;
+    margin: 10px;
+	}
+a:active {
+  	background-color: LightGrey;
+	width: 100px;
+	color: black;
+    margin: 15px;
+	}
+.button {
+  background-color: #89887F; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Give Me a Random Website</h2>
+
+<p class="description">Every time you click the button, it returns a random number between 0 
+and 68 (both included).  With this information scroll down to the chosen number and click on it. Press the button again for another number.</p>
+
+<button class="button" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,68)">Click Me</button>
+
+<p id="demo"></p>
+
+<p class="websites"><a href="https://play2048.co/" target="_blank">
+1.<a><br>
+<a href="https://zoomquilt.org/" target="_blank">
+2.</a><br>
+<a href="https://freerice.com/" target="_blank">
+3.</a><br>
+<a href="https://musclewiki.com/" target="_blank">
+4.</a><br>
+<a href="https://www.internetlivestats.com/" target="_blank">
+5.</a><br>
+<a href="https://thisissand.com/" target="_blank">
+6.</a><br>
+<a href="https://mcbroken.com/" target="_blank">
+7. </a><br>
+<a href="https://trypap.com/" target="_blank">
+8.</a><br>
+<a href="https://www.huffpost.com/section/weird-news" target="_blank">
+9.</a><br>
+<a href="https://29a.ch/sandbox/2011/neonflames/" target="_blank">
+10.</a><br>
+<a href="https://www.omfgdogs.com/" target="_blank">
+11.</a><br>
+<a href="https://wheeldecide.com/" target="_blank">
+12.</a><br>
+<a href="https://findtheinvisiblecow.com/">
+13.</a><br>
+<a href="https://www.mapcrunch.com/" target="_blank">
+14.</a><br>
+<a href="https://theuselessweb.com/" target="_blank">
+15.</a><br>
+<a href="https://puginarug.com/" target="_blank">
+16.</a><br>
+<a href="https://weirdorconfusing.com/" target="_blank">
+17.</a><br>
+<a href="https://longdogechallenge.com/" target="_blank">
+18.</a><br>
+<a href="http://www.staggeringbeauty.com/" target="_blank">
+19.</a><br>
+<a href="https://heeeeeeeey.com/" target="_blank">
+20.</a><br>
+<a href="https://alwaysjudgeabookbyitscover.com/" target="_blank">
+21.</a><br>
+<a href="https://screamintothevoid.com/" target="_blank">
+22.</a><br>
+<a href="http://www.shadyurl.com/" target="_blank">
+23.</a><br>
+<a href="https://neal.fun/size-of-space/" target="_blank">
+24.</a><br>
+<a href="https://stellarium-web.org/" target="_blank">
+25.</a><br>
+<a href="https://saijogeorge.com/css-puns/periodic-table/" target="_blank">
+26.</a><br>
+<a href="https://jacksonpollock.org/" target="_blank">
+27.</a><br>
+<a href="http://buildshruggie.com/" target="_blank">
+28.</a><br>
+<a href="http://www.republiquedesmangues.fr/" target="_blank">
+29.</a><br>
+<a href="https://cant-not-tweet-this.com/" target="_blank">
+30.</a><br>
+<a href="http://www.rrrgggbbb.com/" target="_blank">
+31.</a><br>
+<a href="http://www.therestartpage.com/#" target="_blank">
+32.</a><br>
+<a href="http://www.everydayim.com/" target="_blank">
+33.</a><br>
+<a href="https://smashthewalls.com/" target="_blank">
+34.</a><br>
+<a href="http://randomcolour.com/" target="_blank">
+35.</a><br>
+<a href="https://chrismckenzie.com/" target="_blank">
+36.</a><br>
+<a href="https://www.sixdegreesofwikipedia.com/" target="_blank">
+37.</a><br>
+<a href="http://hasthelargehadroncolliderdestroyedtheworldyet.com/" target="_blank">
+38.</a><br>
+<a href="https://thezen.zone/" target="_blank">
+39.</a><br>
+<a href="https://pointerpointer.com/" target="_blank">
+40.</a><br>
+<a href="http://drawing.garden/" target="_blank">
+41.</a><br>
+<a href="http://www.koalastothemax.com/" target="_blank">
+42.</a><br>
+<a href="http://lacquerlacquer.com/" target="_blank">
+43.</a><br>
+<a href="https://iamawesome.com/" target="_blank">
+44.</a><br>
+<a href="https://strobe.cool/" target="_blank">
+45.</a><br>
+<a href="http://www.yesnoif.com/" target="_blank">
+46.</a><br>
+<a href="http://pixelsfighting.com/" target="_blank">
+47.</a><br>
+<a href="http://www.patience-is-a-virtue.org/" target="_blank">
+48.</a><br>
+<a href="https://boringboringboring.com/" target="_blank">
+49.</a><br>
+<a href="http://onemillionlols.com/" target="_blank">
+50.</a><br>
+<a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+51.</a><br>
+<a href="https://sleepyti.me/" target="_blank">
+52.</a><br>
+<a href="https://explore.org/livecams/cats/kitten-rescue-cam" target="_blank">
+53.</a><br>
+<a href="http://www.amialright.com/" target="_blank">
+54.</a><br>
+<a href="http://weavesilk.com/" target="_blank">
+55.</a><br>
+<a href="https://quickdraw.withgoogle.com/" target="_blank">
+56.</a><br>
+<a href="https://www.dafont.com/" target="_blank">
+57.</a><br>
+<a href="http://www.humansnotinvited.com/" target="_blank">
+58.</a><br>
+<a href="http://www.trashloop.com/" target="_blank">
+59.</a><br>
+<a href="http://chihuahuaspin.com/" target="_blank">
+60.</a><br>
+<a href="http://www.donothingfor2minutes.com/" target="_blank">
+61.</a><br>
+<a href="https://mondrianandme.com/" target="_blank">
+62.</a><br>
+<a href="https://remoji.com/" target="_blank">
+63.</a><br>
+<a href="https://lifehacker.com/" target="_blank">
+64.</a><br>
+<a href="https://codepen.io/akm2/full/rHIsa" target="_blank">
+65.</a><br>
+<a href="http://www.blankwindows.com/" target="_blank">
+66.</a><br>
+<a href="https://www.ocearch.org/tracker/?list=" target="_blank">
+67.</a><br>
+<a href="http://dogs.are.the.most.moe/" target="_blank">
+68.</a></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
