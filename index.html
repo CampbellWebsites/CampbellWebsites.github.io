@@ -58,11 +58,32 @@ a:active {
   font-size: 16px;
 }
 
+.header {
+  padding: 10px 16px;
+  background-color: #cfcfcf;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<div class="header" id="myHeader">
 
 <h2>Give Me a Random Website</h2>
 
@@ -73,7 +94,12 @@ and 68 (both included).  With this information scroll down to the chosen number 
 
 <p id="demo"></p>
 
-<p class="websites"><a href="https://play2048.co/" target="_blank">
+</div>
+
+
+<div class="content">
+
+<p  id="beginning"><a href="https://play2048.co/" target="_blank">
 1.<a><br>
 <a href="https://zoomquilt.org/" target="_blank">
 2.</a><br>
@@ -209,11 +235,41 @@ and 68 (both included).  With this information scroll down to the chosen number 
 67.</a><br>
 <a href="http://dogs.are.the.most.moe/" target="_blank">
 68.</a></p>
+<center>
+
+<p><a href="#beginning">Jump to the Beginning of the Website</a></p>
+
+
+<p id="date"></p>
+
+</center>
+
+</div>
 
 <script>
+
+//This is the random number selector
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+// This makes the header sticky.
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+//This tells you the current date and time.
+var d = new Date();
+document.getElementById("date").innerHTML = d;
 </script>
 
 </body>
